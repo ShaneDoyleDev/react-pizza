@@ -3,8 +3,31 @@ import pizzaData from "./data";
 export default function App() {
   return (
     <>
+      <Header />
+      <Menu />
+      <Footer />
+    </>
+  );
+}
+
+function Header() {
+  return <h1>Fast React Pizza Co.</h1>;
+}
+
+function Menu() {
+  return (
+    <>
+      <h2>Our Menu</h2>
       <Pizza />
     </>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      {new Date().toLocaleTimeString()}. We&apos;re currently open
+    </footer>
   );
 }
 
